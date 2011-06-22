@@ -3,11 +3,16 @@
   <remote  name="korg"
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
-  <remote name="github" fetch="git://github.com/" review="review.cyanogenmod.com" />
+
+  <remote  name="github"
+           fetch="git://github.com/"
+           review="review.cyanogenmod.com" />
+
   <default revision="froyo"
            remote="korg" />
 
-  <project path="build" name="CyanogenMod/android_build" remote="github" revision="froyo-stable">
+
+  <project path="build" name="farsitel/android_build" remote="github" revision="pashmak">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -17,40 +22,13 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" revision="froyo-stable" />
 
-  <project path="dalvik" name="CyanogenMod/android_dalvik" remote="github" revision="froyo-stable" />
+  <project path="dalvik" name="farsitel/android_dalvik" remote="github" revision="pashmak" />
   <project path="development" name="CyanogenMod/android_development" remote="github" revision="froyo-stable" />
 
   <project path="device/common" name="device/common" />
   <project path="device/generic" name="CyanogenMod/android_device_generic" remote="github" revision="froyo-stable" />
+  <project path="device/farsitel/generic" name="farsitel/android_device_farsitel_generic" remote="github" revision="pashmak" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/advent/vega" name="CyanogenMod/android_device_advent_vega" remote="github" revision="master" />
-  <project path="device/commtiva/z71" name="CyanogenMod/android_device_commtiva_z71" remote="github" revision="master" />
-  <project path="device/geeksphone/one" name="CyanogenMod/android_device_geeksphone_one" remote="github" revision="froyo-stable" />
-  <project path="device/htc/ace" name="CyanogenMod/android_device_htc_ace" remote="github" revision="froyo-stable" />
-  <project path="device/htc/bravo" name="CyanogenMod/android_device_htc_bravo" remote="github" revision="froyo-stable" />
-  <project path="device/htc/bravoc" name="CyanogenMod/android_device_htc_bravoc" remote="github" revision="froyo-stable" />
-  <project path="device/htc/buzz" name="CyanogenMod/android_device_htc_buzz" remote="github" revision="froyo-stable" />
-  <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="github" revision="froyo-stable" />
-  <project path="device/htc/dream_sapphire" name="CyanogenMod/android_device_htc_dream_sapphire" remote="github" revision="froyo-stable" />
-  <project path="device/htc/espresso" name="CyanogenMod/android_device_htc_espresso" remote="github" revision="froyo-stable" />
-  <project path="device/htc/glacier" name="CyanogenMod/android_device_htc_glacier" remote="github" revision="froyo-stable" />
-  <project path="device/htc/hero" name="CyanogenMod/android_device_htc_hero" remote="github" revision="froyo-stable" />
-  <project path="device/htc/heroc" name="CyanogenMod/android_device_htc_heroc" remote="github" revision="froyo-stable" />
-  <project path="device/htc/inc" name="CyanogenMod/android_device_htc_inc" remote="github" revision="froyo-stable" />
-  <project path="device/htc/legend" name="CyanogenMod/android_device_htc_legend" remote="github" revision="froyo-stable" />
-  <project path="device/htc/liberty" name="CyanogenMod/android_device_htc_liberty" remote="github" revision="froyo-stable" />
-  <project path="device/htc/passion" name="CyanogenMod/android_device_htc_passion" remote="github" revision="froyo-stable" />
-  <project path="device/htc/passion-common" name="CyanogenMod/android_device_htc_passion-common" remote="github" revision="froyo-stable" />
-  <project path="device/htc/supersonic" name="CyanogenMod/android_device_htc_supersonic" remote="github" revision="froyo-stable" />
-  <project path="device/htc/vision" name="CyanogenMod/android_device_htc_vision" remote="github" revision="froyo-stable" />
-  <project path="device/kyocera/m6000" name="koush/android_device_kyocera_m6000" remote="github" revision="master" />
-  <project path="device/motorola/backflip" name="CyanogenMod/android_device_motorola_backflip" remote="github" revision="master" />
-  <project path="device/motorola/morrison" name="CyanogenMod/android_device_motorola_morrison" remote="github" revision="master" />
-  <project path="device/motorola/sholes" name="CyanogenMod/android_device_motorola_sholes" remote="github" revision="froyo-stable" />
-  <project path="device/nvidia/harmony" name="CyanogenMod/android_device_harmony" remote="github" revision="froyo-stable" />
-  <project path="device/samsung/bmlunlock" name="CyanogenMod/android_device_samsung_bmlunlock" remote="github" revision="master" />
-  <project path="device/samsung/vibrant" name="CyanogenMod/android_device_samsung_vibrant" remote="github" revision="froyo-stable" />
-  <project path="device/yuhua/x2" name="CyanogenMod/android_device_yuhua_x2" remote="github" revision="froyo-stable" />
 
   <project path="external/alsa-lib" name="platform/external/alsa-lib" revision="master" />
   <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="master" />
@@ -82,6 +60,7 @@
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="kruton/android_external_flac" revision="master" remote="github" />
   <project path="external/freetype" name="platform/external/freetype" />
+  <project path="external/fribidi" name="farsitel/android_external_fribidi" remote="github" revision="pashmak" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
   <project path="external/genext2fs" name="platform/external/genext2fs" />
   <project path="external/giflib" name="platform/external/giflib" />
@@ -120,7 +99,7 @@
   <project path="external/quake" name="platform/external/quake" />
   <project path="external/rsync" name="dylex/android_external_rsync" remote="github" revision="master" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="CyanogenMod/android_external_skia" remote="github" revision="froyo-stable" />
+  <project path="external/skia" name="farsitel/android_external_skia" remote="github" revision="pashmak" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/sqlite" name="platform/external/sqlite" />
@@ -134,7 +113,7 @@
   <project path="external/tslib" name="CyanogenMod/android_external_tslib" remote="github" revision="froyo-stable" />
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="CyanogenMod/android_external_v8" remote="github" revision="froyo-stable" />
-  <project path="external/webkit" name="CyanogenMod/android_external_webkit" remote="github" revision="froyo-stable" />
+  <project path="external/webkit" name="farsitel/android_external_webkit" remote="github" revision="pashmak" />
   <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" remote="github" revision="master" />
   <project path="external/wpa_supplicant" name="CyanogenMod/android_external_wpa_supplicant" remote="github" revision="froyo-stable" />
   <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" remote="github" revision="froyo-stable" />
@@ -142,10 +121,10 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github" revision="froyo-stable" />
   <project path="external/zlib" name="platform/external/zlib" />
 
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" remote="github" revision="froyo-stable" />
+  <project path="frameworks/base" name="farsitel/android_frameworks_base" remote="github" revision="pashmak" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/policies/base" name="CyanogenMod/android_frameworks_policies_base" remote="github" revision="froyo-stable" />
+  <project path="frameworks/policies/base" name="farsitel/android_frameworks_policies_base" remote="github" revision="pashmak" />
 
   <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" revision="master" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
@@ -163,62 +142,44 @@
 
   <project path="ndk" name="platform/ndk" revision="master" />
 
-  <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
-  <project path="packages/apps/AndroidTerm" name="CyanogenMod/android_packages_apps_AndroidTerm" remote="github" revision="master" />
-  <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="CyanogenMod/android_packages_apps_Camera" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
-  <project path="packages/apps/CMParts" name="CyanogenMod/android_packages_apps_CMParts" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/CMPartsHelper" name="CyanogenMod/android_packages_apps_CMPartsHelper" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/CMStats" name="CyanogenMod/android_packages_apps_CMStats" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/CMUpdateNotify" name="CyanogenMod/android_packages_apps_CMUpdateNotify" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" revision="master" />
-  <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
-  <project path="packages/apps/Gallery3D" name="CyanogenMod/android_packages_apps_Gallery3D" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/IM" name="platform/packages/apps/IM" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
-  <project path="packages/apps/ADWLauncher" name="CyanogenMod/android_packages_apps_ADWLauncher" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/Phone" name="CyanogenMod/android_packages_apps_Phone" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Protips" name="CyanogenMod/android_packages_apps_Protips" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
+  <project path="packages/apps/AthanTime" name="farsitel/android_packages_apps_AthanTime" remote="github" revision="bazaar" />
+  <project path="packages/apps/AccountsAndSyncSettings" name="farsitel/android_packages_apps_AccountsAndSyncSettings" remote="github" revision="pashmak" />
+  <project path="packages/apps/Bluetooth" name="farsitel/android_packages_apps_Bluetooth" remote="github" revision="pashmak" />
+  <project path="packages/apps/Browser" name="farsitel/android_packages_apps_Browser" remote="github" revision="pashmak" />
+  <project path="packages/apps/Calculator" name="farsitel/android_packages_apps_Calculator" remote="github" revision="pashmak" />
+  <project path="packages/apps/Calendar" name="farsitel/android_packages_apps_Calendar" remote="github" revision="pashmak" />
+  <project path="packages/apps/Camera" name="farsitel/android_packages_apps_Camera" remote="github" revision="pashmak" />
+  <project path="packages/apps/CertInstaller" name="farsitel/android_packages_apps_CertInstaller" remote="github" revision="pashmak" />
+  <project path="packages/apps/Contacts" name="farsitel/android_packages_apps_Contacts" remote="github" revision="pashmak" />
+  <project path="packages/apps/DeskClock" name="farsitel/android_packages_apps_DeskClock" remote="github" revision="pashmak" />
+  <project path="packages/apps/Email" name="farsitel/android_packages_apps_Email" remote="github" revision="pashmak" />
+  <project path="packages/apps/Gallery3D" name="farsitel/android_packages_apps_Gallery3D" remote="github" revision="pashmak" />
+  <project path="packages/apps/HTMLViewer" name="farsitel/android_packages_apps_HTMLViewer" remote="github" revision="pashmak" />
+  <project path="packages/apps/Launcher2" name="farsitel/android_packages_apps_Launcher2" remote="github" revision="pashmak" />
+  <project path="packages/apps/Mms" name="farsitel/android_packages_apps_Mms" remote="github" revision="pashmak" />
+  <project path="packages/apps/Music" name="farsitel/android_packages_apps_Music" remote="github" revision="pashmak" />
+  <project path="packages/apps/PackageInstaller" name="farsitel/android_packages_apps_PackageInstaller" remote="github" revision="pashmak" />
+  <project path="packages/apps/Phone" name="farsitel/android_packages_apps_Phone" remote="github" revision="pashmak" />
+  <project path="packages/apps/Provision" name="farsitel/android_packages_apps_Provision" remote="github" revision="pashmak" />
+  <project path="packages/apps/QiblaCompass" name="farsitel/android_packages_apps_QiblaCompass" remote="github" revision="bazaar" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" remote="github" revision="froyo-stable" />
+  <project path="packages/apps/Settings" name="farsitel/android_packages_apps_Settings" remote="github" revision="pashmak" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
-  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" revision="master" />
-  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/TSCalibration" name="CyanogenMod/android_packages_apps_TSCalibration" remote="github" revision="froyo-stable" />
-  <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" remote="github" revision="froyo-stable" />
-  <project path="packages/experimental" name="platform/packages/experimental" />
-  <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github" revision="froyo-stable" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="CyanogenMod/android_packages_providers_DownloadProvider" remote="github" revision="froyo-stable" />
-  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
-  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
-  <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" remote="github" revision="froyo-stable" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
-  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
-  <project path="packages/wallpapers/Basic" name="CyanogenMod/android_packages_wallpapers_Basic" remote="github" revision="froyo-stable" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
-  <project path="packages/wallpapers/MagicSmoke" name="CyanogenMod/android_packages_wallpapers_MagicSmoke" remote="github" revision="froyo-stable" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
+  <project path="packages/apps/Welcome" name="farsitel/android_packages_apps_Welcome" remote="github" revision="pashmak" />
+  <project path="packages/inputmethods/LatinIME" name="farsitel/android_packages_inputmethods_LatinIME" remote="github" revision="pashmak" />
+  <project path="packages/providers/ApplicationsProvider" name="farsitel/android_packages_providers_ApplicationsProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/CalendarProvider" name="farsitel/android_packages_providers_CalendarProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/ContactsProvider" name="farsitel/android_packages_providers_ContactsProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/DownloadProvider" name="farsitel/android_packages_providers_DownloadProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/DrmProvider" name="farsitel/android_packages_providers_DrmProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/GoogleContactsProvider" name="farsitel/android_packages_providers_GoogleContactsProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/MediaProvider" name="farsitel/android_packages_providers_MediaProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/TelephonyProvider" name="farsitel/android_packages_providers_TelephonyProvider" remote="github" revision="pashmak" />
+  <project path="packages/providers/UserDictionaryProvider" name="farsitel/android_packages_providers_UserDictionaryProvider" remote="github" revision="pashmak" />
+  <project path="packages/wallpapers/Basic" name="farsitel/android_packages_wallpapers_Basic" remote="github" revision="pashmak" />
+  <project path="packages/wallpapers/LivePicker" name="farsitel/android_packages_wallpapers_LivePicker" remote="github" revision="pashmak" />
+  <project path="packages/wallpapers/MagicSmoke" name="farsitel/android_packages_wallpapers_MagicSmoke" remote="github" revision="pashmak" />
+  <project path="packages/wallpapers/MusicVisualization" name="farsitel/android_packages_wallpapers_MusicVisualization" remote="github" revision="pashmak" />
 
   <project path="prebuilt" name="platform/prebuilt" revision="master" />
   <project path="sdk" name="platform/sdk"  revision="tools_r6"/>
@@ -231,6 +192,5 @@
 
   <project path="vendor/cyanogen" name="CyanogenMod/android_vendor_cyanogen" remote="github" revision="froyo-stable" />
 
-  <project path="android" name="CyanogenMod/android" remote="github" revision="froyo-stable" />
-
+  <project path="android" name="farsitel/android" remote="github" revision="pashmak" />
 </manifest>

@@ -1,8 +1,6 @@
 FarsiTel
 ========
-FarsiTel is a project started in Autumn 2009 by Sharif FarsiWeb, Inc. with the goal of making a modern, feature-rich, and easy-to-use mobile operating system for Iranian users, with a standard and slick implementation of Iranian locale including Arabic script, Persian user interface, Iranian calendar, and specialized configuration for Iranian users.
-
-See http://farsitel.com for more information.
+FarsiTel is a deeply localized version of Android for Iranian users, featuring Arabic and Persian text rendering (for version 2.2 of Android which does't support it), right-to-left user interface, Iranian calendar, Persian soft keyboard with type-ahead dictionary, Persian translation, and lots more.
 
 Getting the Source Code
 -----------------------
@@ -25,3 +23,8 @@ Please report the problems to support@farsitel.com. But be aware that we may not
 
 To contribute, you can fork the repository you want to change and apply the changes on your repository. After compiling and testing, you can send a pull request with a description about your changes.
 
+About FarsiTel
+--------------
+FarsiTel is a project owned by Supreme Council of Information and Communication Technology of Iran. It started in Autumn 2009 by Sharif FarsiWeb, Inc. and continued in a spinoff company called Iranian Congenial Mobile with the goal of making a modern, feature-rich, and easy-to-use smartphone operating system for Iranians. It comes with standard and slick implementation of Iranian locale including Perso-Arabic script, Persian user interface, Iranian calendar, and special configurations tailored for Iranians.
+
+See http://farsitel.com for more information.

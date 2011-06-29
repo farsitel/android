@@ -142,7 +142,7 @@
 
   <project path="ndk" name="platform/ndk" revision="master" />
 
-  <project path="packages/apps/AthanTime" name="farsitel/android_packages_apps_AthanTime" remote="github" revision="bazaar" />
+  <project path="packages/apps/AthanTime" name="farsitel/android_packages_apps_AthanTime" remote="github" revision="public" />
   <project path="packages/apps/AccountsAndSyncSettings" name="farsitel/android_packages_apps_AccountsAndSyncSettings" remote="github" revision="pashmak" />
   <project path="packages/apps/Bluetooth" name="farsitel/android_packages_apps_Bluetooth" remote="github" revision="pashmak" />
   <project path="packages/apps/Browser" name="farsitel/android_packages_apps_Browser" remote="github" revision="pashmak" />
@@ -161,7 +161,7 @@
   <project path="packages/apps/PackageInstaller" name="farsitel/android_packages_apps_PackageInstaller" remote="github" revision="pashmak" />
   <project path="packages/apps/Phone" name="farsitel/android_packages_apps_Phone" remote="github" revision="pashmak" />
   <project path="packages/apps/Provision" name="farsitel/android_packages_apps_Provision" remote="github" revision="pashmak" />
-  <project path="packages/apps/QiblaCompass" name="farsitel/android_packages_apps_QiblaCompass" remote="github" revision="bazaar" />
+  <project path="packages/apps/QiblaCompass" name="farsitel/android_packages_apps_QiblaCompass" remote="github" revision="public" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
   <project path="packages/apps/Settings" name="farsitel/android_packages_apps_Settings" remote="github" revision="pashmak" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />

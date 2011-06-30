@@ -190,7 +190,7 @@
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="froyo-stable" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
-  <project path="vendor/cyanogen" name="CyanogenMod/android_vendor_cyanogen" remote="github" revision="froyo-stable" />
+  <project path="vendor/cyanogen" name="farsitel/android_vendor_cyanogen" remote="github" revision="pashmak" />
 
   <project path="android" name="farsitel/android" remote="github" revision="pashmak" />
 </manifest>
